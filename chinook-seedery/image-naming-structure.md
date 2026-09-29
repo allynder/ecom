@@ -100,13 +100,25 @@ Every one of the 200 layers gets a single export setting: **PNG @1x = 2048 × 20
 - The 04/05 numbering follows the layer names (04 = nutrients, 05 = benefits), which is also the on-canvas order in the Variety Pack / Build Your Own rows. The flavor rows have them swapped on canvas; the numbering wins.
 - The gap 06–08 in the old numbering (nutrition facts was "09") is closed; slots are now contiguous.
 
-## Decisions to confirm before running
+## Status
+
+**Applied to the Figma file on 2026-09-29.** All 200 layers renamed, PNG @1x export settings set, 17 stray export settings cleared, row 1:13509 renamed to `hatch-chile-case-1.5oz`. Verified afterwards: exactly 200 layers carry export settings, all names unique, all under `chinook-seedery/`.
+
+### To export
+
+1. Open the file in Figma, File → Export (Cmd/Ctrl+Shift+E).
+2. The dialog lists the 200 layers. Click "Export".
+3. Figma downloads a zip whose folders match the tree above.
+
+## Decisions taken (confirmed before running)
 
 1. Slot names and the 04 (nutrients) / 05 (benefits) order.
 2. Folder nesting `product/variant/` (vs. flat `product-variant/`).
 3. `1.5oz-case` keeps the dot. Shopify accepts it; `1-5oz-case` is the alternative if you prefer no dots in URLs.
 4. PNG @1x 2048 px (vs. JPG, which is roughly 5–10× smaller per file).
 5. Zilla bucket is not a variant on the live site yet; it is included in the export regardless.
+
+All five went through as proposed.
 
 ## Files
 
